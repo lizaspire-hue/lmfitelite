@@ -37,7 +37,7 @@ export function Approach() {
               '"Health isn\u2019t a project you squeeze in. It\u2019s the asset that funds everything else. Invest in it the way you\u2019d invest in anything that matters."'
             }
           </blockquote>
-          <figcaption className="mt-3 flex items-center justify-between gap-6 pl-8 text-sm uppercase tracking-[0.12em] text-muted-foreground">
+          <figcaption className="mt-3 flex items-center justify-between gap-6 pl-8 pr-10 md:pr-40 text-sm uppercase tracking-[0.12em] text-muted-foreground">
             <span>— Liz Marsland, Founder</span>
             <Image
               src="/images/liz-headshot.jpg"

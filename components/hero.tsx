@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Button, Container, Eyebrow, Lead } from './ui'
 
 export function Hero() {
@@ -8,8 +7,8 @@ export function Hero() {
       className="flex min-h-svh items-center pb-20 pt-36"
       style={{ background: 'radial-gradient(ellipse at 75% 30%, var(--surface-raised) 0%, var(--background) 60%)' }}
     >
-      <Container className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-        <div>
+      <Container>
+        <div className="max-w-3xl">
           <Eyebrow>{'Private Health & Performance Coaching · London'}</Eyebrow>
           <h1 className="text-balance font-serif text-5xl font-medium leading-[1.1] md:text-6xl lg:text-7xl">
             Your career is at the top.
@@ -30,22 +29,6 @@ export function Hero() {
           <p className="mt-9 text-sm tracking-wide text-muted-foreground">
             <strong className="font-medium text-gold">By application only</strong> · Limited client places each quarter
           </p>
-        </div>
-
-        <div className="relative isolate mx-auto w-full max-w-56 sm:max-w-64">
-          <div
-            aria-hidden
-            className="absolute -left-3 -top-3 bottom-3 right-3 -z-10 hidden border border-gold/50 md:block"
-          />
-          <Image
-            src="/images/liz-headshot.jpg"
-            alt="Liz Marsland, private health and performance coach for women in London"
-            width={550}
-            height={550}
-            priority
-            sizes="256px"
-            className="aspect-square w-full object-cover contrast-105 grayscale-[15%]"
-          />
         </div>
       </Container>
     </section>
