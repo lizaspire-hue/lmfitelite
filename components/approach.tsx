@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Container, Eyebrow, Lead, SectionHeading } from './ui'
 
 const points = [
@@ -36,8 +37,16 @@ export function Approach() {
               '"Health isn\u2019t a project you squeeze in. It\u2019s the asset that funds everything else. Invest in it the way you\u2019d invest in anything that matters."'
             }
           </blockquote>
-          <figcaption className="mt-5 pl-8 text-sm uppercase tracking-[0.12em] text-muted-foreground">
-            — Liz Marsland, Founder
+          <figcaption className="mt-3 flex items-center justify-between gap-6 pl-8 text-sm uppercase tracking-[0.12em] text-muted-foreground">
+            <span>— Liz Marsland, Founder</span>
+            <Image
+              src="/images/liz-headshot.jpg"
+              alt=""
+              width={550}
+              height={550}
+              sizes="96px"
+              className="size-20 shrink-0 rounded-full border border-gold/60 object-cover md:size-24"
+            />
           </figcaption>
         </figure>
       </Container>
