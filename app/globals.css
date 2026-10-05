@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #060d1f;
+  --surface: #0a1530;
+  --surface-raised: #16295a;
+  --foreground: #e8ecf5;
+  --muted-foreground: #9aa6c2;
+  --gold: #c9a96e;
+  --accent: #7fd4e8;
+  --line: rgb(255 255 255 / 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-gold: var(--gold);
+  --color-accent: var(--accent);
+  --color-line: var(--line);
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
