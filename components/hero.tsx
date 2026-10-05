@@ -32,20 +32,22 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="relative isolate">
+        <div className="relative isolate mx-auto w-full max-w-xs sm:max-w-sm">
           <div
             aria-hidden
             className="absolute -left-4 -top-4 bottom-4 right-4 -z-10 hidden border border-gold/50 md:block"
           />
-          <Image
-            src="/images/liz-portrait.jpg"
-            alt="Liz Marsland, private health and performance coach for women in London"
-            width={1206}
-            height={1493}
-            priority
-            sizes="(min-width: 1024px) 40vw, 100vw"
-            className="aspect-[4/5] w-full object-cover contrast-105 grayscale-[15%]"
-          />
+          <div className="relative aspect-square w-full overflow-hidden">
+            {/* Scaled crop keeps the frame to head and shoulders of the full-length source photo */}
+            <Image
+              src="/images/liz-portrait.jpg"
+              alt="Liz Marsland, private health and performance coach for women in London"
+              fill
+              priority
+              sizes="(min-width: 640px) 384px, 320px"
+              className="origin-[52%_36%] scale-[1.8] object-cover object-top contrast-105 grayscale-[15%]"
+            />
+          </div>
         </div>
       </Container>
     </section>
