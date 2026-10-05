@@ -11,14 +11,14 @@ export function About() {
   return (
     <section id="about" className="border-t border-line py-20 md:py-28">
       <Container className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div className="reveal">
+        <div className="reveal mx-auto w-full max-w-md">
           <Image
-            src="/images/liz-coaching.jpg"
-            alt="Liz Marsland coaching a client"
-            width={1206}
-            height={1920}
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="aspect-[4/5] w-full object-cover"
+            src="/images/liz-coaching-crop.jpg"
+            alt="Liz Marsland coaching a client through a barbell exercise"
+            width={1100}
+            height={850}
+            sizes="448px"
+            className="w-full object-cover"
           />
         </div>
         <div className="reveal">
