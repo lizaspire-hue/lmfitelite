@@ -9,7 +9,7 @@ export function Hero() {
     >
       <Container className="flex items-center justify-between gap-12">
         <div className="max-w-3xl">
-          <Eyebrow>{'Private Health & Performance Coaching · London'}</Eyebrow>
+          <Eyebrow>{'Leadership Health & Performance Coaching · London'}</Eyebrow>
           <h1 className="text-balance font-serif text-5xl font-medium leading-[1.1] md:text-6xl lg:text-7xl">
             Your career is at the top.
             <br />
@@ -17,8 +17,9 @@ export function Hero() {
           </h1>
           <Lead className="mb-10 mt-7">
             A fully personalised, done-with-you programme for high-achieving women who lead businesses, teams and
-            families — and refuse to compromise on energy, appearance or longevity. No diets. No fads. Just a precise
-            plan, a world-class team, and results you can feel in the boardroom and at home.
+            families — and refuse to compromise on energy, appearance or longevity. Build the strength, calm and focus
+            to lead with power, perform at your peak and stay resilient under pressure. No diets. No fads. Just a
+            precise plan, a world-class team, and results you can feel in the boardroom and at home.
           </Lead>
           <div className="flex flex-wrap gap-4">
             <Button href="#apply">Request a Private Consultation</Button>
