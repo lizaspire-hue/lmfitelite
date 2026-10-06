@@ -18,7 +18,11 @@ const poppins = Poppins({
 const seoDescription =
   'Private health and performance coaching for women in leadership in London. Build strength, power, calm, focus and resilience with hormone and biomarker testing, a specialist team, and 1-to-1 coaching with Liz Marsland, BSc Sports Science, 20+ years experience.'
 
+const siteUrl = 'https://www.lmfitelitecoaching.space'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: '/' },
   title: 'LMFIT Private | Leadership Performance, Strength & Resilience Coaching for Women | London',
   description: seoDescription,
   keywords: [
@@ -49,6 +53,7 @@ export const metadata: Metadata = {
     description:
       'Lead with power, calm and focus. Private health and performance coaching for high-achieving women in London.',
     siteName: 'LMFIT Private',
+    url: siteUrl,
     images: ['/images/liz-portrait.jpg'],
     locale: 'en_GB',
     type: 'website',
@@ -66,6 +71,8 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'HealthAndBeautyBusiness',
   name: 'LMFIT Private',
+  url: siteUrl,
+  image: `${siteUrl}/images/liz-portrait.jpg`,
   description: seoDescription,
   areaServed: 'London, United Kingdom',
   founder: { '@type': 'Person', name: 'Liz Marsland', jobTitle: 'Health & Performance Coach' },
